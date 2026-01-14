@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial' , sans-serif;
+        background-color: #3dc98f;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        max-width: 1200px;
+        margin-top: 20px;
+        padding: 10px 25px;
+        background-color: rgba(245, 245, 220, 0.9);
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        position: relative;
+        height: 40px;
+    }
+
+        /* รายการเมนู */
+    .nav-links{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /* ทำให้กลุ่มเมนูอยู่กึ่งกลาง Navbar */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize; /* ทำให้ตัวแรกเป็นตัวพิมพ์ใหญ่ดูสวยขึ้น */
+    }
+
+    </style>
+
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="logo">
+            </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Main page</a></li>
+        </ul>
+        
+        </nav>
 </body>
 </html>
